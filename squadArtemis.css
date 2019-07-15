@@ -378,7 +378,7 @@
   border:1px solid #C05980; 
 } 
 .evans p::-webkit-scrollbar-track { 
-  background: #f5a9b8; 
+  background: #5bcefa; 
   border:1px solid #C05980; 
 } 
 .evans p::selection, .evans h6::selection, .evans h7::selection, .evans span::selection, .evans div::selection{ 
