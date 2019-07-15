@@ -1,0 +1,389 @@
+.siriusNPC{
+  background:#5bcefa;
+  width:450px;
+  height:500px;
+  position:relative;
+  overflow:hidden;
+  margin:0 auto;
+}
+.siriusNPC>br, .scajasNPC>br, .sdatos2>br{
+  display:none;
+}
+.simg1NPC{
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:400px;
+  height:500px;
+  z-index:0;
+}
+.simg2NPC{
+  position:absolute;
+  width:150px;
+  height:500px;
+  top:0px;
+  left:-150px;
+  z-index:2;
+}
+.sdatos{
+  position:absolute;
+  top:0px;
+  left:-150px;
+  width:150px;
+  height:500px;
+  text-align:center;
+  font:9px roboto;
+  font-weight:bold;
+  text-transform:uppercase;
+  z-index:3;
+  opacity:0;
+}
+.sdatos2{
+  position:relative;
+  top:50%;
+  margin-top: 170px;
+  transform:translateY(-50%);
+}
+.sdatos span{
+  color:white;
+  display:block;
+  margin:0 10px;
+  padding:4px 0;
+  line-height:12px;
+  height:11px;
+  border-bottom:1px solid rgba(255,255,255,0.5);
+}
+.sdatos span:last-child{
+  border-bottom:0px;
+}
+.scajasNPC{
+  background:#f1f1f1;
+  width:250px;
+  height:500px;
+  position:absolute;
+  top:0px;
+  left:-250px;
+  z-index:3;
+}
+.scajaNPC h6{
+  background:#5bcefa;
+  margin:-10px -10px 10px;
+  height:25px;
+  text-transform:uppercase;
+  font:9px roboto;
+  font-weight:bold;
+  text-align:left;
+  line-height:25px;
+}
+.scajaNPC h6 i{
+  background:#0095B6;
+  height:25px;
+  width:25px;
+  display:inline-block;
+  color:white;
+  vertical-align:top;
+  font-size:10px;
+  float:left;
+  margin-right:10px;
+  text-align:center;
+  line-height:25px;
+}
+.scajaNPC{
+  background:#5bcefa;
+  border:10px solid #5bcefa;
+  margin:10px 10px 0;
+  text-align:justify;
+  color:#eee;
+}
+.scajaNPC p{
+  padding-right:5px;
+  overflow:auto;
+  margin:0 auto;
+  font:11px roboto;
+  line-height:12px;
+}
+.scaja1NPC p{
+  height:115px;
+}
+.scaja2NPC p{
+  height:265px;
+}
+.scajaNPC b, .scajaNPC strong, .scajaNPC a{
+  color:#5bcefa;
+}
+.scajaNPC a{
+  text-decoration:underline;
+}
+.scaja1NPC{
+  height:140px;
+}
+.scaja2NPC{
+  height:290px;
+}
+.siriusNPC div::selection, .siriusNPC p::selection, .siriusNPC b::selection, .siriusNPC strong::selection, .siriusNPC a::selection{
+  background:#5bcefa;
+  color:white;
+}
+.simg1NPC{
+  transition:ease 1s;
+}
+.simg2NPC, .sdatosNPC{
+  transition:ease 1s;
+}
+.scajasNPC{
+  transition:ease 1s;
+  transition-delay:0s;
+}
+.stituloNPC {
+  background:#5bcefa;
+  height:500px;
+  width:50px;
+  position:absolute;
+  top:0px;
+  right:0px;
+}
+.stituloNPC span{
+  width:20px;
+  display:block;
+  font-size:28px;
+  word-wrap: break-word;
+  font-family:Cousine;
+  font-weight:bold;
+  color:white;
+  text-align:center;
+  line-height:30px;
+  position:absolute;
+  left:15px;
+  top:500px;
+  transition:ease 1s;
+}
+.stituloNPC em{
+  width:20px;
+  display:block;
+  font-size:28px;
+  word-wrap: break-word;
+  font-family:Cousine;
+  font-weight:bold;
+  font-style:normal;
+  color:white;
+  text-align:center;
+  line-height:25px;
+  position:absolute;
+  left:15px;
+  bottom:15px;
+  margin:0 auto;
+  transition:ease 1s;
+  transition-delay:0.5s;
+}
+.siriusNPC p::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.siriusNPC p::-webkit-scrollbar-thumb {
+  background: #5bcefa;
+  border:1px solid #0095B6;
+}
+.siriusNPC p::-webkit-scrollbar-track {
+  background: #5bcefa;
+  border:1px solid #0095B6;
+}
+.siriusNPC:hover .simg1NPC{
+  left:400px;
+}
+.siriusNPC:hover .simg2NPC, .siriusNPC:hover .sdatos{
+  left:0px;
+}
+.siriusNPC:hover .sdatos{
+  opacity:1;
+}
+.siriusNPC:hover .scajasNPC{
+  left:150px;
+}
+.siriusNPC:hover .stituloNPC span{
+  top:15px;
+  transition-delay:0.5s;
+}
+.siriusNPC:hover .stituloNPC em{
+  bottom:500px;
+  transition-delay:0s;
+}
+.ncreditNPC{
+  width:450px;
+  text-align:right;
+  margin:0 auto;
+  display:block;
+  font-size:10px;
+  text-decoration:none;
+  font:8px roboto;
+}
+.ncredit2NPC{
+  width:450px;
+  text-align:right;
+  margin:0 auto;
+  display:block;
+  font-size:10px;
+  text-decoration:none;
+  font:8px roboto;
+}
+.siriusNPC+br+.ncreditNPC{
+  margin-top:-20px;
+}
+.ncreditNPC:before{
+  content:"©";
+}
+
+.phantomtemis {
+  width: 430px;
+  height: 30px;
+}
+
+.evansNPC{ 
+  background:#f1f1f1; 
+  width:430px; 
+  margin:0 auto; 
+  height:auto; 
+  padding:10px; 
+} 
+.etitleNPC{ 
+  background:#5bcefa; 
+  margin: -10px -10px 10px -10px; 
+  font:16px Cousine; 
+  font-weight:900;
+  font-style:bold; 
+  text-transform:uppercase; 
+  text-align:center;
+  color:white; 
+  padding:10px; 
+} 
+.ebusquedaNPC{ 
+  background-color:#222; 
+  background-size:cover; 
+  background-position:center; 
+  height:170px;
+  position:relative; 
+  margin-bottom:10px;
+  overflow:hidden; 
+} 
+.enombreNPC{ 
+  position:absolute; 
+  top:50%; 
+  transform:translateY(-50%); 
+  color:white;
+  max-width:200px; 
+  transition:ease 1s; 
+} 
+.ebusquedaNPC:nth-of-type(odd) .enombreNPC{ 
+  left:20px; 
+} 
+.ebusquedaNPC:nth-of-type(even) .enombreNPC{ 
+  right:20px; 
+} 
+.ebusquedaNPC:nth-of-type(odd):hover .enombreNPC{ 
+  left:-320px; 
+} 
+.ebusquedaNPC:nth-of-type(even):hover .enombreNPC{ 
+  right:-320px; 
+} 
+.ebusquedaNPC:last-of-type{ 
+  margin-bottom:0px; 
+} 
+.ebusquedaNPC h6{ 
+  margin:0; 
+  font:15px Cousine; 
+  font-weight:900; 
+  font-style:bold; 
+  text-transform:uppercase; 
+} 
+.enombreNPC span{ 
+  font:8px roboto; 
+  text-transform:uppercase; 
+} 
+.edatosNPC{ 
+  background:#f1f1f1; 
+  height:170px; 
+  position:absolute; 
+  top:0px;
+  width:430px;
+  transition:ease 1s; 
+} 
+.ebusquedaNPC:nth-of-type(even) .edatosNPC{ 
+  left:-430px; 
+} 
+.ebusquedaNPC:nth-of-type(odd) .edatosNPC{
+  right:-430px; 
+} 
+.ebusquedaNPC:nth-of-type(even):hover .edatosNPC{ 
+  left:0px; 
+} 
+.ebusquedaNPC:nth-of-type(odd):hover .edatosNPC{ 
+  right:0px; 
+} 
+.edatosNPC img{ 
+  float:left;
+  position:relative; 
+  top:50%; transform:translateY(-50%);
+  border-radius:100%;
+  border: 5px solid #5bcefa;
+  background:white;
+  left:20px;
+  height:100px;
+  width:100px; 
+} 
+.edatosNPC h7{ 
+  float:right; 
+  width:235px; 
+  background:#0095B6; 
+  color:white;
+  height:30px;
+  display:block; 
+  margin-right:20px; 
+  margin: 20px 20px 0px 0;
+  font:11px roboto; 
+  font-weight:bold; 
+  text-align:center;
+  letter-spacing:1px; 
+  text-transform:uppercase; 
+  line-height:30px; 
+} 
+.edatosNPC p{
+  float:right;
+  background:#5bcefa;
+  margin:0 20px 0 0; 
+  width:212px;
+  border:10px solid #5bcefa;
+  color:#eee;
+  font:10px roboto;
+  text-align:justify;
+  overflow:auto;
+  padding-right:3px;
+  height:80px; 
+} 
+.ebusquedaNPC:nth-of-type(even) .edatosNPC img{ 
+  float:right; 
+  left:0px;
+  margin-right:20px; 
+} 
+.ebusquedaNPC:nth-of-type(even) .edatosNPC h7, .ebusquedaNPC:nth-of-type(even) .edatosNPC p{
+  float:left;
+  margin-right:0px;
+  margin-left:20px; 
+} 
+
+.evansNPC p::-webkit-scrollbar { 
+  width: 5px; 
+  height: 5px; 
+} 
+.evansNPC p::-webkit-scrollbar-thumb { 
+  background: #5bcefa; 
+  border:1px solid #0095B6; 
+} 
+.evansNPC p::-webkit-scrollbar-track { 
+  background: #5bcefa; 
+  border:1px solid #0095B6; 
+} 
+.evansNPC p::selection, .evansNPC h6::selection, .evansNPC h7::selection, .evansNPC span::selection, .evansNPC div::selection{ 
+   background:#afb759; 
+} 
+.evansNPC strong, .evansNPC i, .evansNPC a, .evansNPC b, .evansNPC em{ 
+  color:#afb759; 
+} 
