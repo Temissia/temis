@@ -1,27 +1,27 @@
-#mikae2 {
+#temisign2 {
   -moz-transition: all 1.2s ease-in-out;
   -o-transition: all 1.2s ease-in-out;
   -webkit-transition: all 1.2s ease-in-out;
   height: 300px;
   margin-left: -160px;
   width: 675px;
-}#mikae1:hover #mikae2 {
+}#temisign1:hover #temisign2 {
   margin-left: 0;
-}#mikae1 {
+}#temisign1 {
   background: #000;
   height: 200px;
   overflow: hidden;
   position: relative;
   width: 300px;
 }
-#enmika {
+#temisign {
   color: #1A283A;
   height: 180px;
   margin-left: 40px;
   padding-top: 60px;
   width: 200px;
 }
-#enmika a {
+#temisign a {
 background: #f5a9b8;
   box-sizing: border-box;
   color: #fff;
