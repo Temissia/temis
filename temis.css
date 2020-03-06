@@ -5,6 +5,7 @@
   height: 300px;
   margin-left: -160px;
   width: 675px;
+  padding: 250px 500px; 
 }#temisign1:hover #temisign2 {
   margin-left: 0;
 }#temisign1 {
