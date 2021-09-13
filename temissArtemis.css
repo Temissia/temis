@@ -1,0 +1,407 @@
+#temissMain {
+max-width: 520px;
+padding-top: 0;
+margin:auto;
+position: relative;
+}
+
+#temissMain .topTitle {
+background-color: #b784a7;
+min-height: 80px;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+Font-family: "Montserrat";
+font-size: 50px;
+font-weight: 100;
+color: white;
+}
+
+#temissMain .topCircle {
+width: 150px;
+height: 150px;
+background-color: #b784a7;
+border-radius: 50%;
+position: absolute;
+top: 0;
+bottom: 0;
+left: -80px;
+right: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#temissMain .circleIMG {
+width: 140px;
+height: 140px;
+border-radius: 50%;
+background: url("https://i.imgur.com/TjTZv7H.jpg");
+background-size: 200px 240px;
+background-position: 30% 10%;
+}
+
+#temissMain .mainContent {
+width: 550px;
+min-height: 300px;
+box-shadow: 0 0 10px 1px #e0b0ff;
+margin-left: -31px;
+display: flex;
+gap: 2px;
+ }
+ 
+#temissMain .mainContent .tabs {
+width: 100px;
+display: flex;
+flex-wrap: wrap;
+gap: 5px;
+justify-content: center;
+background-color: #b784a7;
+padding-top: 75px;
+}
+
+#temissMain .mainContent .tab label {
+  position: relative; font-size: 20px; border-radius: 5px;
+  overflow: hidden; text-align: center;
+  margin: 11.5px 10px; background: #8c627f; 
+  display: block; width: 35px; height: 35px;
+}
+
+#temissMain .mainContent .slide {
+  width: 72px; height: 360px; 
+  margin: 0 0 0 -36px; transition: .5s;
+}
+
+ #temissMain .mainContent .tab i {
+   display:inline-block; padding: 8px; float: left;
+   width: 20px; height: 20px; 
+ }
+ 
+ #temissMain .mainContent .tab .block {
+   color: #f5a9b8; padding: 8px; width: 20px;
+   display: inline-block; float: left;
+   transition: .2s;
+ }
+ 
+ #temissMain .mainContent .slide:hover {
+  width: 72px; height: 360px; 
+  margin: 0px;
+}
+ 
+#temissMain .mainContent .tab [type=radio] {
+  display: none;  
+}
+
+#temissMain .mainContent .content {
+  position: absolute; overflow: hidden;
+  width: 87%; height:90%;
+  top: 80px; left: 420px;
+  opacity: 0; transition: .5s;
+}
+
+#temissMain .mainContent [type=radio]:checked ~ label {
+  z-index: 2; 
+}
+
+
+#temissMain .mainContent [type=radio]:checked ~ label .slide {
+  z-index: 2; margin: 0px;
+}
+
+#temissMain .mainContent [type=radio]:checked ~ label ~ .content {
+  z-index: 1; opacity: 1; top: 80px; left: 70px;
+}
+
+#temissMain .mainContent .box {
+  margin: 12px 15px 0 10px;
+  padding: 10px;
+  display: block;
+  text-align: left;
+}
+
+#temissMain .mainContent .scroll {
+  color: #484848; font: 12px "Montserrat";  height: 925px;
+  overflow: auto; padding-right: 10px; text-align: left;
+}
+
+#temissMain .mainContent .scroll::-webkit-scrollbar {
+  width: 3px;
+}
+
+#temissMain .mainContent .scroll::-webkit-scrollbar-track {
+  background: #b784a7; border: solid 1px #b784a7;
+  border-radius: 5px;
+}
+
+#temissMain .mainContent .scroll::-webkit-scrollbar-thumb {
+  background: #f5a9b8; border-radius: 5px;
+}
+
+#temissMain .sectionTitle {
+width: 390px;
+height: 40px;
+background-image: linear-gradient(to right, #b784a7, #b784a7, transparent);
+font-family: "Montserrat";
+font-size: 22px;
+font-weight: 500;
+color: #fff;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+padding-left: 8px;
+border-radius: 8px;
+text-transform: uppercase;
+}
+  
+#temissMain .sectionTitle ~ b {
+color: #f5a9b8;
+text-transform: uppercase;
+font-size: 13px;
+margin-right: 2px;
+}
+
+#temissMain .sectionTitle span {
+font-size: 13px;
+font-weight: 300;
+padding-left: 4px;
+padding-top: 4px;
+}
+
+#temissMain .sectionMain {
+margin: 12px 0 50px 10px;
+display: flex;
+justify-content: space-between;
+text-align: left;
+}
+
+#temissMain .sectionMain b {
+color: #f5a9b8;
+text-transform: uppercase;
+font-size: 16px;
+}
+  
+#temissMain .small {
+font-size: 12px;
+font-weight: 300;
+text-transform: lowercase;
+text-align: left;
+}
+  
+#temissMain .fac {
+background-image: url(https://i.imgur.com/YPf9fCX.png);
+background-repeat: no-repeat;
+height:200px;
+padding-left: 5px;
+}
+  
+#temissMain .space {
+margin-left: 15px;
+}
+
+#temissMain .sectionColumn {
+width: 180px;
+text-align: left;
+}
+
+#temissMain .single {
+width: 390px;
+}
+  
+#temissMain .sectionColumn b {
+width: 180px;
+color: #f5a9b8;
+text-transform: uppercase;
+font-size: 13px;
+margin-right: 2px;
+}
+  
+#temissMain .atri1 {
+margin-left: 60px;
+}
+
+#temissMain .atri2 {
+margin-left: 50px;
+}
+  
+#temissMain .subatri {
+margin-top: -45px;
+}
+  
+#temissMain .subTotal {
+margin-left: 25px;
+}
+  
+#temissMain .after {
+margin: 12px 0 50px 10px;
+text-align: left;
+}
+
+#temissMain .after b {
+color: #f5a9b8;
+text-transform: uppercase;
+font-size: 13px;
+}
+
+#temissMain .akumaIMG{
+position: relative;
+width: 380px;
+height: 150px;
+background: url("https://64.media.tumblr.com/af063d12cab680e8e11fb15f7b65283f/tumblr_okpzqe7Kz41usdhv3o2_540.gifv");
+background-size: cover;
+}
+
+#temissMain .akumaIMG::after {
+position: absolute;
+content:'';
+background: #DC143C;
+inset: 0;
+mix-blend-mode: hue;
+}
+  
+#temissMain .hakiIMG{
+position: relative;
+width: 180px;
+height: 100px;
+}
+  
+#temissMain .ken {
+background: url("http://pa1.narvii.com/6683/33c60019b99270d1bdfd4f7447872379a8e31fe1_00.gif");
+background-size: cover;
+}
+  
+#temissMain .bou {
+background: url("https://pa1.narvii.com/6249/54b58c106408e6f9c9a787e8575ace1008bd2343_hq.gif");
+background-size: cover;
+}
+  
+#temissMain .ken::after {
+position: absolute;
+content:'';
+background: #b784a7;
+inset: 0;
+mix-blend-mode: hue;
+}
+  
+#temissMain .bou::after {
+position: absolute;
+content:'';
+background: #b784a7;
+inset: 0;
+mix-blend-mode: hue;
+}
+
+#temissMain .tecIMG{
+position: relative;
+width: 380px;
+height: 150px;
+background-size: cover;
+}
+
+#temissMain .gale {
+background: url("https://i.imgur.com/5Pg7P0w.jpg");
+background-size: cover;
+}
+  
+#temissMain .gale::after {
+position: absolute;
+content:'';
+background: #b784a7;
+inset: 0;
+mix-blend-mode: hue;
+}
+
+#temissMain .feather {
+background: url("https://64.media.tumblr.com/a18069bfc83838bf25143f1af46b80c1/3fce5bb04d418ad2-ce/s640x960/462297d1f285a2678ca745fd2ad4fcd3fe31e101.gifv");
+background-size: cover;
+background-position: 10% 50%;
+}
+
+#temissMain .feather::after {
+position: absolute;
+content:'';
+background: #b784a7;
+inset: 0;
+mix-blend-mode: hue;
+}
+
+#temissMain .nuoli {
+background: url("https://pa1.narvii.com/6835/44cfdcecd72ac776a60be20ffa1ef73744aa1c2f_hq.gif");
+background-size: cover;
+}
+  
+#temissMain .nuoli::after {
+position: absolute;
+content:'';
+background: #b784a7;
+inset: 0;
+mix-blend-mode: hue;
+}
+
+#temissMain .aparaIMG{
+position: relative;
+width: 180px;
+height: 280px;
+background:  #b784a7;
+background-size: cover;
+}
+
+#temissMain .casual {
+background: url("https://i.imgur.com/cVRbIkW.jpg");
+background-size: cover;
+height: 345px;
+}  
+
+#temissMain .hibrido {
+background: url("https://i.imgur.com/O8mbm8s.jpg");
+background-size: cover;
+}
+  
+#temissMain .animalIMG{
+position: relative;
+width: 380px;
+height: 190px;
+background:  url("https://i.imgur.com/4EAPva4.jpg");
+background-size: cover;
+}
+  
+#temissMain .relaIMG{
+position: relative;
+width: 130px;
+height: 130px;
+background:  #b784a7;
+background-size: cover;
+}
+  
+#temissMain .armstrong {
+background: url("https://i.imgur.com/zDEmnzc.png");
+background-size: cover;
+}
+
+#temissMain .benne {
+background: url("http://i.imgur.com/bo23Cv8.png");
+background-size: cover;
+}
+ 
+#temissMain .kurisu {
+background: url("https://i.imgur.com/KlSWwWK.jpg");
+background-size: cover;
+}
+  
+#temissMain .hode {
+background: url("https://i.imgur.com/auI2jg6.jpg");
+background-size: cover;
+}
+  
+#temissMain .rosette {
+background: url("https://i.imgur.com/LmrPtE3.jpg");
+background-size: cover;
+}
+
+#temissMain .leah{
+background: url("https://i.imgur.com/1U2qAq6.jpg");
+background-size: cover;
+}
+
+#temissMain a {color:  #C05980;}
+#temissMain a:hover {color:  #b784a7;}
