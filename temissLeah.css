@@ -1,0 +1,324 @@
+#leahhMain {
+max-width: 520px;
+padding-top: 0;
+margin:auto;
+position: relative;
+}
+
+#leahhMain .topTitle {
+background-color: #FFBF00;
+min-height: 80px;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+Font-family: "Montserrat";
+font-size: 50px;
+font-weight: 100;
+color: white;
+}
+
+#leahhMain .topCircle {
+width: 150px;
+height: 150px;
+background-color: #FFBF00;
+border-radius: 50%;
+position: absolute;
+top: 0;
+bottom: 0;
+left: -80px;
+right: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#leahhMain .circleIMG {
+width: 140px;
+height: 140px;
+border-radius: 50%;
+background: url("https://i.imgur.com/mhsla57.jpg");
+background-size: 200px 261px;
+background-position: 40% 30%;
+}
+
+#leahhMain .mainContent {
+width: 550px;
+min-height: 300px;
+box-shadow: 0 0 10px 1px #FFDB58;
+margin-left: -31px;
+display: flex;
+gap: 2px;
+ }
+ 
+#leahhMain .mainContent .tabs {
+width: 100px;
+display: flex;
+flex-wrap: wrap;
+gap: 5px;
+justify-content: center;
+background-color: #FFBF00;
+padding-top: 75px;
+}
+
+#leahhMain .mainContent .tab label {
+  position: relative; font-size: 20px; border-radius: 5px;
+  overflow: hidden; text-align: center;
+  margin: 11.5px 10px; background: #DAA520; 
+  display: block; width: 35px; height: 35px;
+}
+
+#leahhMain .mainContent .slide {
+  width: 72px; height: 360px; 
+  margin: 0 0 0 -36px; transition: .5s;
+}
+
+ #leahhMain .mainContent .tab i {
+   display:inline-block; padding: 8px; float: left;
+   width: 20px; height: 20px; 
+ }
+ 
+ #leahhMain .mainContent .tab .block {
+   color: #FF7518; padding: 8px; width: 20px;
+   display: inline-block; float: left;
+   transition: .2s;
+ }
+ 
+ #leahhMain .mainContent .slide:hover {
+  width: 72px; height: 360px; 
+  margin: 0px;
+}
+ 
+#leahhMain .mainContent .tab [type=radio] {
+  display: none;  
+}
+
+#leahhMain .mainContent .content {
+  position: absolute; overflow: hidden;
+  width: 87%; height:100%;
+  top: 80px; left: 420px;
+  opacity: 0; transition: .5s;
+}
+
+#leahhMain .mainContent [type=radio]:checked ~ label {
+  z-index: 2; 
+}
+
+
+#leahhMain .mainContent [type=radio]:checked ~ label .slide {
+  z-index: 2; margin: 0px;
+}
+
+#leahhMain .mainContent [type=radio]:checked ~ label ~ .content {
+  z-index: 1; opacity: 1; top: 80px; left: 70px;
+}
+
+#leahhMain .mainContent .box {
+  margin: 12px 15px 0 10px;
+  padding: 10px;
+  display: block;
+  text-align: left;
+}
+
+#leahhMain .mainContent .scroll {
+  color: #484848; font: 12px "Montserrat";  height: 645px;
+  overflow: auto; padding-right: 10px; text-align: left;
+}
+
+#leahhMain .mainContent .scroll::-webkit-scrollbar {
+  width: 3px;
+}
+
+#leahhMain .mainContent .scroll::-webkit-scrollbar-track {
+  background: #FFBF00; border: solid 1px #FFBF00;
+  border-radius: 5px;
+}
+
+#leahhMain .mainContent .scroll::-webkit-scrollbar-thumb {
+  background: #FF7518; border-radius: 5px;
+}
+
+#leahhMain .sectionTitle {
+width: 390px;
+height: 40px;
+background-image: linear-gradient(to right, #FFBF00, #FFBF00, transparent);
+font-family: "Montserrat";
+font-size: 22px;
+font-weight: 500;
+color: #fff;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+padding-left: 8px;
+border-radius: 8px;
+text-transform: uppercase;
+}
+  
+#leahhMain .sectionTitle ~ b {
+color: #FF7518;
+text-transform: uppercase;
+font-size: 13px;
+margin-right: 2px;
+}
+
+#leahhMain .sectionTitle span {
+font-size: 13px;
+font-weight: 300;
+padding-left: 4px;
+padding-top: 4px;
+}
+
+#leahhMain .sectionMain {
+margin: 12px 0 50px 10px;
+display: flex;
+justify-content: space-between;
+text-align: left;
+}
+
+#leahhMain .sectionMain b {
+color: #FF7518;
+text-transform: uppercase;
+font-size: 16px;
+}
+  
+#leahhMain .small {
+font-size: 12px;
+font-weight: 300;
+text-transform: lowercase;
+text-align: left;
+}
+  
+#leahhMain .fac {
+background-image: url(https://i.imgur.com/YPf9fCX.png);
+background-repeat: no-repeat;
+height:200px;
+padding-left: 5px;
+}
+  
+#leahhMain .space {
+margin-left: 15px;
+}
+
+#leahhMain .sectionColumn {
+width: 180px;
+text-align: left;
+}
+
+#leahhMain .single {
+width: 390px;
+}
+  
+#leahhMain .sectionColumn b {
+width: 180px;
+color: #FF7518;
+text-transform: uppercase;
+font-size: 13px;
+margin-right: 2px;
+}
+  
+#leahhMain .atri1 {
+margin-left: 60px;
+}
+
+#leahhMain .atri2 {
+margin-left: 50px;
+}
+  
+#leahhMain .subatri {
+margin-top: -45px;
+}
+  
+#leahhMain .subTotal {
+margin-left: 25px;
+}
+  
+#leahhMain .after {
+margin: 12px 0 50px 10px;
+text-align: left;
+}
+
+#leahhMain .after b {
+color: #FF7518;
+text-transform: uppercase;
+font-size: 13px;
+}
+
+  
+#leahhMain .hakiIMG{
+position: relative;
+width: 180px;
+height: 100px;
+}
+  
+#leahhMain .ken {
+background: url("http://pa1.narvii.com/6683/33c60019b99270d1bdfd4f7447872379a8e31fe1_00.gif");
+background-size: cover;
+}
+  
+#leahhMain .bou {
+background: url("https://pa1.narvii.com/6249/54b58c106408e6f9c9a787e8575ace1008bd2343_hq.gif");
+background-size: cover;
+}
+  
+#leahhMain .ken::after {
+position: absolute;
+content:'';
+background: #b784a7;
+inset: 0;
+mix-blend-mode: hue;
+}
+  
+#leahhMain .bou::after {
+position: absolute;
+content:'';
+background: #b784a7;
+inset: 0;
+mix-blend-mode: hue;
+}
+
+#leahhMain .tecIMG{
+position: relative;
+width: 380px;
+height: 150px;
+background-size: cover;
+}
+
+
+#leahhMain .aparaIMG{
+position: relative;
+width: 180px;
+height: 280px;
+background:  #b784a7;
+background-size: cover;
+}
+
+#leahhMain .casual {
+background: url("https://i.imgur.com/c9ysnf4.jpg");
+background-size: cover;
+}  
+  
+#leahhMain .relaIMG{
+position: relative;
+width: 130px;
+height: 130px;
+background:  #b784a7;
+background-size: cover;
+}
+  
+#leahhMain .artemis {
+background: url("https://i.imgur.com/bQB1zgy.jpg");
+background-size: cover;
+}
+
+#leahhMain .benne {
+background: url("http://i.imgur.com/bo23Cv8.png");
+background-size: cover;
+}
+ 
+#leahhMain .kurisu {
+background: url("https://i.imgur.com/KlSWwWK.jpg");
+background-size: cover;
+}
+
+#leahhMain a {color:  #C05980;}
+#leahhMain a:hover {color:  #b784a7;}
